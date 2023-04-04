@@ -177,7 +177,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
 
 }
 
@@ -187,12 +187,13 @@ body {
     height: 470px;
     display: flexbox;
     text-align: center;
-    border-radius: 15px;
+    border-radius: 1rem;
+    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.1));
 }
 
 .container img {
     width: 280px;
-    border-radius: 10px;
+    border-radius: 1rem;
     margin-top: 10px;
 }
 
@@ -201,6 +202,7 @@ body {
     font-size: 21px;
     color: hsl(218, 44%, 22%);
     padding: 0 20px;
+    margin: 1rem 0;
 }
 
 .container p {
@@ -208,4 +210,5 @@ body {
     font-size: 15px;
     color: hsl(220, 15%, 55%);
     padding: 0 20px;
+
 }
