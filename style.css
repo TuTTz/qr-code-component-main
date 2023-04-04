@@ -162,6 +162,10 @@ table {
     border-spacing: 0;
 }
 
+
+
+
+
 html {
     box-sizing: border-box;
     font-family: 'Outfit', sans-serif;
@@ -172,7 +176,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 99vh;
 }
 
 .container {
