@@ -1,178 +1,17 @@
-@charset "utf-8";
-/* CSS Document */
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-and,
-address,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video,
-input,
-textarea,
-select {
-    background: transparent;
-    border: 0;
-    font-size: 100%;
-    margin: 0;
-    outline: 0;
-    padding: 0;
-    vertical-align: baseline;
+:root {
+    --card-bg-color: hsl(0, 0%, 100%);
+    --h1-color: hsl(218, 44%, 22%);
+    --bg-color: hsl(212, 45%, 89%);
+    --p-color: hsl(220, 15%, 55%);
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
-}
-
-body {
-    line-height: 1;
-}
-
-abbr[title],
-dfn[title] {
-    border-bottom: 1px dotted;
-    cursor: help;
-}
-
-/*blockquote, q {
-	quotes:none;
-}
-blockquote:before, blockquote:after, q:before, q:after {
-	content:none;
-}*/
-del {
-    text-decoration: line-through;
-}
-
-hr {
-    background: transparent;
-    border: 0;
-    clear: both;
-    color: transparent;
-    height: 1px;
-    margin: 0;
-    padding: 0;
-}
-
-mark {
-    background-color: #ffffb3;
-    font-style: italic
-}
-
-input,
-select {
-    vertical-align: middle;
-}
-
-ins {
-    background-color: red;
-    color: white;
-    text-decoration: none;
-}
-
-ol,
-ul {
-    list-style: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-
-
-
-/* CSS WORK */
 html {
     box-sizing: border-box;
     font-family: 'Outfit', sans-serif;
 }
 
 body {
-    background-color: hsl(212, 45%, 89%);
+    background-color: var(--bg-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -182,7 +21,7 @@ body {
 }
 
 .container {
-    background-color: white;
+    background-color: var(--card-bg-color);
     width: 300px;
     height: 470px;
     display: flexbox;
@@ -193,6 +32,7 @@ body {
 
 .container img {
     width: 280px;
+    max-width: 100%;
     border-radius: 1rem;
     margin-top: 10px;
 }
@@ -200,7 +40,7 @@ body {
 .container h1 {
     font-weight: 700;
     font-size: 21px;
-    color: hsl(218, 44%, 22%);
+    color: var(--h1-color);
     padding: 0 20px;
     margin: 1rem 0;
     line-height: 1.6rem;
@@ -209,7 +49,7 @@ body {
 .container p {
     font-weight: 400;
     font-size: 15px;
-    color: hsl(220, 15%, 55%);
+    color: var(--p-color);
     padding: 0 20px;
     line-height: 1.2rem;
 }
